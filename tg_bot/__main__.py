@@ -142,9 +142,9 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 START_PHOTTO,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝙷𝙴𝙻𝙿",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🛠Help🛠",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="About",
+                                                                                   InlineKeyboardButton(text="😎About😎",
                                                                        callback_data="about_back".format(bot.username)),
                                                                                    [InlineKeyboardButton(text= "𝙳𝙴𝙿𝙻𝙾𝚈",
                                                                        url="https://youtu.be/Bz8AUvN5bSo"),
